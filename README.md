@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/room-homepage-using-html-5-css-and-javascript-HK3BQVCK0S)
 - Live Site URL:(https://fredzabu.github.io/Room-homepage/)
 
 ## My process

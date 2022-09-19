@@ -1,0 +1,366 @@
+/*
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 500, 600, 700
+
+*/
+
+:root{
+    font-size: 12px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    height: 62vh;
+    display: flex;
+}
+.header-section1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    flex: 1.3;
+}
+nav{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 7%;
+
+}
+
+.close,.menu{
+    display: none;
+}
+nav h2{
+    flex: 1;
+    color: white;
+}
+
+.nav-list{
+    flex: 5;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.nav-list ul li{
+    position: relative;
+}
+.nav-list ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    transition: width 300ms ease-in-out;
+}
+.nav-list ul li:hover::after {
+    width: 70%;
+}
+ul li >a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+}
+.hero-image img{
+    height: 100%;
+    width: 100%;
+}
+.header-section2{
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+.hero-text{
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+}
+.text1 h1{
+    font-size: 3.7rem;
+    font-weight: bold;
+    line-height: 0.9;
+    color: hsl(0, 0%, 0%);
+}
+
+.text1 .descript{
+    margin:1em 0% 1em 0%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: hsl(0, 0%, 63%);
+}
+.shop-now{
+    font-size: 1rem;
+    letter-spacing: 10px;
+    color: hsl(0, 0%, 0%);
+    transition: color 500ms ease-in-out;
+    cursor: pointer;
+}
+.shop-now:hover{
+    color: hsl(0, 0%, 27%);
+}
+
+.nav-arrow{
+    background-color: hsl(0, 0%, 0%);
+    width: 25%;
+    height: 15%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.arrow-left,.arrow-right{
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 500ms ease-in-out;
+}
+
+
+.arrow-left img, .arrow-right img{
+    height: 40%;
+}
+
+.arrow-left:hover,.arrow-right:hover{
+    background-color: hsl(0, 0%, 27%);
+}
+section{
+    width: 100%;
+    height: 38vh;
+    display:flex;
+}
+
+.couch,.couch2{
+    width: 100%;
+    height: 100%;
+    
+}
+.couch{
+    flex: 1.1;
+}
+.couch2{
+    flex: 1.2;
+}
+.couch img,.couch2 img{
+    height: 100%;
+    width: 100%;
+}
+.about-sect{
+    flex: 1.6;
+    position: relative;
+    width: 100%;
+}
+.about-text{
+    position: absolute;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about-text h4{
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 0%);
+}
+.about-text p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: hsl(0, 0%, 63%);
+}
+
+@media screen and (max-width:1250px){
+    nav {
+            width: 60%;
+        }
+    .hero-text {
+            width: 80%;
+        }
+}
+
+@media screen and (max-width:1100px) {
+    .text1 h1 {
+        font-size: 3.35rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .text1 h1 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width:912px){
+
+
+header,
+    section {
+        height: 100vh;
+        flex-direction: column;
+    }
+.header-section1{
+    height: 40%;
+    flex: 1;
+}
+.header-section2{
+    height: 60%;
+    flex: 1;
+}
+    .hero-text {
+        width: 80%;
+        top: 30%;
+        transform: translate(-50%, -30%);
+    }
+
+    .nav-arrow {
+        bottom: 100%;
+        right: 0px;
+        height: 18%;
+    }
+
+    .text1 h1 {
+        font-size: 4rem;
+    }
+
+    .about-sect {
+        height: 40%;
+    }
+    .about-text{
+        width: 80%;
+    }
+   .about-text p{
+     width: 80%;
+     font-size: 1.3rem;
+     line-height: 1.5;
+  
+   }
+    .couch,
+    .couch2 {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .header-section1 {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            flex: 1.1;
+        }
+         
+         .close,
+         .menu {
+             display: block;
+             margin-left: 20px;
+         }
+         .menu img{
+            padding-top: 5px;
+         }
+         .menu {
+           flex: 1;
+         }
+        nav {
+            position: static;
+            margin-top: 10%;
+            z-index: 9999;
+    
+        }
+       
+        .nav-list{
+            top: -100%;
+            left: 0px;
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            height: 25%;
+            z-index: 999;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 0px 5px 0px 20px;
+        }
+        .nav-list ul{
+            flex: 2.5;
+        }
+        .close{
+            flex: 1;
+        }
+        .nav-list ul li a{
+            color: black;
+        }
+     .hero-image{
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+     }
+   .hero-text {
+       width: 80%;
+       top: 30%;
+       transform: translate(-50%, -30%);
+   }
+ 
+   .text1 h1 {
+     font-size: 2.7rem;
+   }
+
+  .about-sect {
+    height: 44%;
+  }
+  .about-text p {
+      width: 100%;
+  }
+  .couch,.couch2{
+    height: 28%;
+  } 
+
+}
+
+
+@media screen and (max-width:280px) {
+
+    .hero-text {
+        width: 95%;
+    }
+
+    .text1 h1 {
+      font-size: 2.4rem;
+    }
+    .about-text{
+      width: 95%;
+    }
+    .about-text h4{
+      font-size: 1rem;
+    }
+    .about-text p {
+        width: 100%;
+    }
+
+}
